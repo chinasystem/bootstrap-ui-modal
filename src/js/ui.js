@@ -8,10 +8,10 @@ if (typeof jQuery === 'undefined') {
   throw new Error('ui\'s JavaScript requires jQuery');
 } else {
   if (!jQuery.fn.modal || typeof jQuery.fn.modal !== 'function') {
-    throw new Error('ui\'s JavaScript requires Bootstrap 3');
+    throw new Error('ui\'s JavaScript requires Bootstrap 4');
   }
   if (!jQuery.fn.tooltip || typeof jQuery.fn.tooltip !== 'function') {
-    throw new Error('ui\'s JavaScript requires Bootstrap 3');
+    throw new Error('ui\'s JavaScript requires Bootstrap 4');
   }
 }
 
