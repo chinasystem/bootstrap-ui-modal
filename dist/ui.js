@@ -8,10 +8,10 @@ if (typeof jQuery === 'undefined') {
   throw new Error('ui\'s JavaScript requires jQuery');
 } else {
   if (!jQuery.fn.modal || typeof jQuery.fn.modal !== 'function') {
-    throw new Error('ui\'s JavaScript requires Bootstrap 3');
+    throw new Error('ui\'s JavaScript requires Bootstrap 4');
   }
   if (!jQuery.fn.tooltip || typeof jQuery.fn.tooltip !== 'function') {
-    throw new Error('ui\'s JavaScript requires Bootstrap 3');
+    throw new Error('ui\'s JavaScript requires Bootstrap 4');
   }
 }
 
@@ -35,33 +35,12 @@ if (typeof jQuery === 'undefined') {
  }
 
 +function($, _ui){
-  //define vanguard ui utils to window vui object
-  var version = '1.0.2', _utils = {};
+  //define ui utils to window _ui object
+  var version = '1.0.1', _utils = {};
 
   _utils.version = version;
 
   var vu = _ui.utils = _utils;
-
-  /**
-  * merge object 2 into object 1
-  * case 1 : two array merge
-  * case 2 : two object merge
-  */
-
-  vu.merge = function(obj1, obj2, options) {
-    if (obj2) {
-      if (typeof obj1 === 'undefined') {
-        obj1 = obj2;
-      } else {
-        if (obj1 instanceof Array && obj2 instanceof Array) {
-
-        } else if (!(obj1 instanceof Array) && !(obj2 instanceof Array)){
-
-        }
-      }
-    }
-    return obj1;
-  };
 
   vu.isSimpleObject = function(obj) {
     return obj && (typeof obj === 'string'|| typeof obj === 'number' || typeof obj === 'boolean');
