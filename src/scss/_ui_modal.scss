@@ -1,0 +1,93 @@
+.modal {
+    .modal-dialog {
+        .modal-content {
+            background-color: $modal-bg-white-light;
+            border: 1px solid $modal-bc-gray;
+            border-radius: 2px;
+            box-shadow: 0 3px 9px rgba(0, 0, 0, 0.125);
+            .modal-header {
+                .modal-title {
+                    color: $modal-cl-white;
+                }
+            }
+            .modal-footer {
+                margin-top: 15px;
+                padding: 20px 10px 20px;
+                text-align: right;
+                border-top: 1px solid $modal-bc-white-light;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .modal-content {
+              -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+              box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
+            }
+          }
+    }
+    &.modal-default {
+        .modal-content {
+            border-color: $modal-bc-default;
+            border-radius: 4px;
+            .modal-header {
+                background-color: $modal-bc-default;
+            }
+            .modal-body {
+                color: $modal-cl-default;
+            }
+        }
+    }
+    &.modal-danger {
+        .modal-content {
+            border-color: $modal-bc-danger;
+            border-radius: 4px;
+            .modal-header {
+                background-color: $modal-bc-danger;
+            }
+            .modal-body {
+                color: $modal-cl-danger;
+            }
+        }
+       
+    }
+    &.modal-success {
+        .modal-content {
+            border-color: $modal-bc-success;
+            border-radius: 4px;
+            .modal-header {
+                background-color: $modal-bc-success;
+            }
+            .modal-body {
+                color: $modal-cl-success;
+            }
+        }
+       
+    }
+    &.modal-info {
+        .modal-content {
+            border-color: $modal-bc-info;
+            border-radius: 4px;
+            .modal-header {
+                background-color: $modal-bc-info;
+            }
+            .modal-body {
+                color: $modal-cl-info;
+            }
+        }
+       
+    }
+    &.modal-warning {
+        .modal-content {
+            border-color: $modal-bc-warning;
+            border-radius: 4px;
+            .modal-header {
+                background-color: $modal-bc-warning;
+            }
+            .modal-body {
+                color: $modal-cl-warning;
+            }
+        }
+       
+    }
+}
+

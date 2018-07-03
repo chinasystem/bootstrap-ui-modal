@@ -1,0 +1,34 @@
+.card {
+    margin-top:10px;
+  }
+  
+  .card-top-border {
+    border: 1px solid #ccc;
+    border-top: 3px solid #ccc;
+  }
+  
+  .card-top-border-primary {
+    border-color: #5899eb;
+  }
+  
+  .card-top-border-warning {
+    border-color: #ff902b;
+  }
+  
+  .card-top-border-danger {
+    border-color: #f05050;
+  }
+  
+  .card-top-border-info {
+    border-color: #23b7e5;
+  }
+  
+  .card-title {
+    padding : 10px 15px;
+    margin-bottom: 0px;
+  }
+  
+  .card-body {
+    padding : 5px 15px;
+  }
+  
